@@ -20,6 +20,9 @@ salve a imagem e coloque na pasta com exatamente o nome indicado:
 |---|---|
 | `img/palestra-expoprag-2025.jpg` | https://static.wixstatic.com/media/66acd7_ed91d81f99164c6cb399f5439f7516ba~mv2.jpg |
 | `img/treinamento-atendimento-magico.jpg` | https://static.wixstatic.com/media/66acd7_e898ed5622e6428c8e54a44a9b4f06fd~mv2.jpg |
+| `img/sinapse-equipe.jpg` | https://static.wixstatic.com/media/e9836b_f24c11556ca84919af24e04addc44f29~mv2.jpg |
+| `img/sinapse-escritorio.jpg` | https://static.wixstatic.com/media/e9836b_6f6e707454474402a1aa3cba4ede4612~mv2.jpg |
+| `img/sinapse-palco.jpg` | https://static.wixstatic.com/media/e9836b_7ab9375749c04a9497ee6bba35721551~mv2.jpg |
 | `img/clientes/lucas-cunha.png` | https://static.wixstatic.com/media/e9836b_04aaadf2736945f28712e2c5bddd1573~mv2.png |
 | `img/clientes/flavio-morais.png` | https://static.wixstatic.com/media/e9836b_3274fd6d9e8a42b3a869e8f9546607fd~mv2.png |
 | `img/clientes/clinica-dra-limeira.png` | https://static.wixstatic.com/media/e9836b_a5e590733a3c4a099653b09a0865f387~mv2.png |

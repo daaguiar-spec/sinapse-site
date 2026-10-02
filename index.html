@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://www.sinapseonline.com/">
 <meta name="robots" content="index, follow">
 <meta name="google-site-verification" content="wHrj8GQhDKox3mFql4pEoyLrboio15yaQueR81u8h3Y">
-<meta name="theme-color" content="#FF5A00">
+<meta name="theme-color" content="#0A0A0C">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
@@ -21,156 +21,179 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Sinapse Brasil", "legalName": "SINAPSE - CONSULTORIA EMPRESARIAL LTDA", "url": "https://www.sinapseonline.com/", "logo": "https://www.sinapseonline.com/favicon.svg", "image": "https://static.wixstatic.com/media/66acd7_ed91d81f99164c6cb399f5439f7516ba~mv2.jpg", "description": "Treinamentos, palestras e consultoria para desenvolver pessoas e transformar empresas.", "telephone": "+55-85-99971-1108", "email": "comercial@sinapseonline.com", "foundingDate": "2005", "taxID": "11.277.870/0001-29", "address": {"@type": "PostalAddress", "streetAddress": "Rua Leonardo Mota, 1394, Loja 06", "addressLocality": "Fortaleza", "addressRegion": "CE", "postalCode": "60170-041", "addressCountry": "BR"}, "geo": {"@type": "GeoCoordinates", "latitude": -3.7382541, "longitude": -38.4971056}, "areaServed": "BR", "sameAs": ["https://instagram.com/sinapseonline", "https://www.facebook.com/sinapseonline"], "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Palestras"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Treinamentos"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Consultoria"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Experiências e imersões"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pesquisas"}}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:wght@400;500;600;700&display=swap">
 <script>
-// Usa a foto local (pasta img/). Se ela ainda não estiver lá, carrega do Wix; se falhar, mostra as iniciais/fundo.
-function fb(i){if(i.dataset.f){i.src=i.dataset.f;i.dataset.f="";return}var c=i.closest(".lg");if(c){var n=(i.alt||"").split(" ").filter(function(w){return w.length>2}).slice(0,2).map(function(w){return w[0]}).join("");c.innerHTML='<b style="font-family:var(--display);font-size:1.6rem;color:#FF5A00">'+n+'</b>'}else i.remove()}
+function fb(i){if(i.dataset.f){i.src=i.dataset.f;i.dataset.f="";return}var c=i.closest(".lg");if(c){var n=(i.alt||"").split(" ").filter(function(w){return w.length>2}).slice(0,2).map(function(w){return w[0]}).join("");c.innerHTML='<b style="font-family:var(--display);font-size:2rem;color:#FF5A00">'+n+'</b>'}else i.remove()}
 </script>
 <style>
-/* Layout: faixas horizontais largas; um "fio de sinapse" laranja conecta as seções pela borda esquerda */
+/* Layout: palco escuro de evento; fotos de ponta a ponta com véu escuro, títulos condensados enormes, bento de soluções e faixas em movimento */
 :root{
-  --bg:#FBFAF8; --surface:#F1EEEA; --ink:#1B1A22; --muted:#5E5A66; --line:#E2DDD6;
-  --accent:#FF5A00; --accent-2:#FF8800; --on-accent:#FFFFFF;
-  --deep:#16141C; --deep-ink:#F4F1EC; --deep-muted:#A8A3B0;
-  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --bg:#0A0A0C; --bg-2:#131317; --card:#18181D; --ink:#F5F3EF; --muted:#A09CA8; --line:rgba(245,243,239,.12);
+  --accent:#FF5A00; --accent-2:#FFB020; --on-accent:#0A0A0C;
+  --grad:linear-gradient(100deg,#FF5A00 0%,#FF8A00 55%,#FFB020 100%);
+  --display:"Anton","Impact","Arial Narrow Bold",sans-serif;
   --body:"Figtree",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
-  --r:14px; --max:1180px;
+  --r:18px; --max:1240px;
+  color-scheme:dark;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#121117; --surface:#1B1A22; --ink:#F2EFEA; --muted:#A8A3B0; --line:#2C2A34;
-  --accent:#FF6A1A; --accent-2:#FF9A2E; --deep:#0B0A0F; --deep-ink:#F4F1EC; --deep-muted:#A8A3B0; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#121117; --surface:#1B1A22; --ink:#F2EFEA; --muted:#A8A3B0; --line:#2C2A34;
-  --accent:#FF6A1A; --accent-2:#FF9A2E; --deep:#0B0A0F; --deep-ink:#F4F1EC; --deep-muted:#A8A3B0; color-scheme:dark}
-
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit}
-a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
-h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0;text-wrap:balance;letter-spacing:-.02em}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent-2);outline-offset:3px;border-radius:8px}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;text-transform:uppercase;line-height:.95;letter-spacing:.005em;text-wrap:balance}
 p{margin:0}
-.wrap{max-width:var(--max);margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
-.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
-.bang{color:var(--accent)}
+.wrap{max-width:var(--max);margin:0 auto;padding-inline:clamp(16px,4vw,48px)}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-2)}
+.kicker::before{content:"";width:28px;height:2px;background:var(--grad)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--grad);color:var(--on-accent);text-decoration:none;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.88rem;padding:17px 28px;border-radius:999px;transition:transform .2s,box-shadow .2s;box-shadow:0 10px 30px rgba(255,90,0,.3)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 38px rgba(255,90,0,.45)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}
+.btn.line:hover{box-shadow:inset 0 0 0 1.5px var(--ink)}
+
+/* Mídia com fallback: a foto cobre o bloco; sem foto, fica o degradê */
+.media{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 80% 20%,rgba(255,90,0,.35),transparent 60%),linear-gradient(160deg,#24212B,#0E0D11)}
+.media>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;max-width:none}
 
 /* Header */
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
-.logo{font-family:var(--display);font-weight:800;font-size:1.6rem;text-decoration:none;letter-spacing:-.03em}
-.logo small{display:block;font-family:var(--body);font-weight:500;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:-4px}
-.links{display:flex;gap:28px;align-items:center}
-.links a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--muted)}
+header{position:fixed;inset-inline:0;top:0;z-index:40;padding-top:env(safe-area-inset-top,0px);transition:background .3s,backdrop-filter .3s}
+header.solid{background:rgba(10,10,12,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px}
+.logo{font-family:var(--display);font-size:1.9rem;text-decoration:none;letter-spacing:.02em;text-transform:uppercase;line-height:1}
+.logo i{font-style:normal;color:var(--accent)}
+.links{display:flex;gap:30px;align-items:center}
+.links a{text-decoration:none;font-size:.82rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,243,239,.78)}
 .links a:hover{color:var(--ink)}
-.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:600;padding:13px 22px;border-radius:999px;font-size:.98rem;transition:transform .2s,background .2s;border:0;cursor:pointer}
-.btn:hover{transform:translateY(-2px);background:var(--accent-2)}
-.btn svg{width:18px;height:18px;flex:none}
-.btn.ghost{background:transparent;color:inherit;box-shadow:inset 0 0 0 1.5px currentColor}
-.btn.ghost:hover{background:transparent;color:var(--accent)}
-.nav .btn{padding:10px 18px;font-size:.9rem}
-@media (max-width:860px){.links a:not(.btn){display:none}}
+.links .btn{padding:12px 20px;font-size:.78rem;color:var(--on-accent)}
+@media (max-width:900px){.links a:not(.btn){display:none}}
 
 /* Hero */
-.hero{padding-block:clamp(48px,8vw,96px) clamp(40px,6vw,72px)}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,64px);align-items:center}
-.hero h1{font-size:clamp(2.6rem,6.4vw,5.4rem);font-weight:800}
-.hero h1 em{font-style:normal;color:var(--accent)}
-.hero .lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--muted);max-width:34ch;margin-top:24px}
-.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.since{display:flex;gap:28px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line)}
-.since div{display:flex;flex-direction:column}
-.since b{font-family:var(--display);font-size:1.9rem;font-weight:700;font-variant-numeric:tabular-nums;line-height:1}
-.since span{font-size:.85rem;color:var(--muted);margin-top:6px}
-.photo{position:relative;border-radius:var(--r);overflow:hidden;background:
-  radial-gradient(circle at 25% 30%,color-mix(in srgb,var(--accent) 55%,transparent) 0 2px,transparent 3px),
-  radial-gradient(circle at 70% 60%,color-mix(in srgb,var(--accent) 55%,transparent) 0 2px,transparent 3px),
-  linear-gradient(135deg,var(--surface),color-mix(in srgb,var(--accent) 18%,var(--surface)));max-width:100%}
-.photo img{display:block;width:100%;height:100%;object-fit:cover}
-.hero .photo{aspect-ratio:4/5}
-.hero .tag{position:absolute;left:16px;bottom:16px;right:16px;background:var(--deep);color:var(--deep-ink);padding:14px 16px;border-radius:10px;font-size:.88rem;line-height:1.4}
-.hero .tag b{color:var(--accent-2);font-weight:600}
-@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero .photo{aspect-ratio:4/3}}
+.hero{position:relative;min-height:min(900px,100svh);display:flex;align-items:flex-end;isolation:isolate}
+.hero .media{position:absolute;inset:0;z-index:-1}
+.hero .media img{animation:zoom 22s ease-out both;object-position:center 30%}
+.hero .media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,12,.94) 0%,rgba(10,10,12,.7) 45%,rgba(10,10,12,.25) 100%),linear-gradient(0deg,var(--bg) 0%,transparent 40%)}
+@keyframes zoom{from{transform:scale(1.12)}to{transform:scale(1)}}
+.hero-in{padding-block:150px 56px;width:100%}
+.hero h1{font-size:clamp(3.4rem,10vw,8.6rem);max-width:11ch;margin-top:22px}
+.hero .lead{font-size:clamp(1.05rem,1.7vw,1.3rem);color:rgba(245,243,239,.82);max-width:38ch;margin-top:26px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-top:64px;backdrop-filter:blur(8px)}
+.stats div{background:rgba(10,10,12,.66);padding:20px 22px;display:flex;flex-direction:column;gap:4px}
+.stats b{font-family:var(--display);font-weight:400;font-size:clamp(2rem,3.6vw,2.9rem);line-height:1;font-variant-numeric:tabular-nums}
+.stats span{font-size:.82rem;color:var(--muted);letter-spacing:.04em}
+@media (max-width:760px){.stats{grid-template-columns:1fr 1fr}}
 
-/* Synapse line */
-.synapse{height:56px;width:100%;display:block;color:var(--accent)}
+/* Faixa em movimento */
+.ticker{border-block:1px solid var(--line);background:var(--bg-2);overflow:hidden;padding-block:18px}
+.ticker-track{display:flex;gap:48px;width:max-content;animation:slide 40s linear infinite}
+.ticker span{font-family:var(--display);font-size:1.6rem;text-transform:uppercase;white-space:nowrap;color:rgba(245,243,239,.5);display:flex;align-items:center;gap:48px}
+.ticker span::after{content:"✦";color:var(--accent);font-size:1rem}
+@keyframes slide{to{transform:translateX(-50%)}}
 
-/* Sobre */
-.about{padding-block:clamp(56px,8vw,104px)}
-.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,72px);align-items:start}
-.about h2{font-size:clamp(2rem,4vw,3.2rem);margin-top:12px}
-.about .photo{aspect-ratio:3/2;margin-top:32px}
-.about-text{display:flex;flex-direction:column;gap:18px;max-width:62ch;color:var(--muted)}
-.about-text p:first-child{font-family:var(--display);font-size:clamp(1.3rem,2.2vw,1.65rem);line-height:1.3;color:var(--ink);font-weight:500}
-.motto{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:10px;padding-top:20px;border-top:1px solid var(--line);font-weight:600;color:var(--ink)}
-.motto span::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-right:10px;vertical-align:middle}
-@media (max-width:860px){.about-grid{grid-template-columns:1fr}}
+/* Manifesto */
+.manifesto{padding-block:clamp(80px,12vw,160px)}
+.manifesto p{font-family:var(--display);text-transform:uppercase;font-size:clamp(2.2rem,5.6vw,4.8rem);line-height:1.02;max-width:20ch;color:rgba(245,243,239,.28)}
+.manifesto p strong{font-weight:400;color:var(--ink)}
+.manifesto p em{font-style:normal}
 
-/* Soluções (faixa escura) */
-.solutions{background:var(--deep);color:var(--deep-ink);padding-block:clamp(56px,8vw,104px)}
-.sol-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:48px}
-.sol-head h2{font-size:clamp(2rem,4.4vw,3.4rem);max-width:16ch;margin-top:12px}
-.sol-head p{color:var(--deep-muted);max-width:40ch}
-.sol-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));border-top:1px solid color-mix(in srgb,var(--deep-ink) 16%,transparent)}
-.sol{display:flex;flex-direction:column;gap:14px;padding:32px 28px 32px 0;border-bottom:1px solid color-mix(in srgb,var(--deep-ink) 16%,transparent);text-decoration:none;transition:padding .25s}
-.sol:hover{padding-left:12px}
-.sol .ic{width:44px;height:44px;border-radius:12px;background:color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent-2);display:grid;place-items:center}
-.sol .ic svg{width:22px;height:22px}
-.sol h3{font-size:1.55rem;font-weight:700}
-.sol p{color:var(--deep-muted);font-size:.98rem;max-width:38ch}
-.sol .more{margin-top:auto;font-weight:600;font-size:.9rem;color:var(--accent-2)}
+/* Quem somos */
+.about{padding-block:0 clamp(80px,10vw,140px)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,88px);align-items:center}
+.about-photos{position:relative;padding-bottom:18%}
+.about-photos .a{aspect-ratio:4/5;border-radius:var(--r);max-width:100%}
+.about-photos .b{position:absolute;right:-6%;bottom:0;width:58%;aspect-ratio:4/3;border-radius:var(--r);border:6px solid var(--bg);max-width:100%}
+.badge{position:absolute;left:-14px;top:28px;background:var(--grad);color:var(--on-accent);border-radius:14px;padding:14px 18px;font-weight:700;line-height:1.2;box-shadow:0 18px 40px rgba(0,0,0,.4)}
+.badge b{display:block;font-family:var(--display);font-weight:400;font-size:2.4rem;line-height:1}
+.about h2{font-size:clamp(2.6rem,5.4vw,4.6rem);margin-top:18px}
+.about-text{display:flex;flex-direction:column;gap:16px;color:var(--muted);margin-top:26px;max-width:58ch}
+.about-text p:first-child{color:var(--ink);font-size:1.18rem}
+.pillars{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.pillars span{border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-size:.84rem;font-weight:600;letter-spacing:.04em}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr}.about-photos{max-width:560px;margin-inline:auto;width:100%}.about-photos .b{right:0}.badge{left:0}}
+
+/* Soluções: bento */
+.solutions{padding-block:clamp(80px,10vw,140px);background:var(--bg-2);border-block:1px solid var(--line)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.sec-head h2{font-size:clamp(2.6rem,6vw,5.2rem);margin-top:18px;max-width:12ch}
+.sec-head p{color:var(--muted);max-width:40ch}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:minmax(250px,auto);gap:16px}
+.tile{position:relative;isolation:isolate;border-radius:var(--r);overflow:hidden;background:var(--card);border:1px solid var(--line);padding:28px;display:flex;flex-direction:column;justify-content:flex-end;gap:12px;text-decoration:none;min-width:0;transition:transform .3s,border-color .3s}
+.tile:hover{transform:translateY(-4px);border-color:rgba(255,138,0,.6)}
+.tile .media{position:absolute;inset:0;z-index:-1}
+.tile .media img{transition:transform .8s}
+.tile:hover .media img{transform:scale(1.06)}
+.tile .media::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,10,12,.95) 8%,rgba(10,10,12,.35) 70%,rgba(10,10,12,.15))}
+.tile h3{font-size:clamp(2rem,3.4vw,3rem)}
+.tile p{color:rgba(245,243,239,.78);max-width:40ch;font-size:.98rem}
+.tile .go{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-2);margin-top:6px}
+.tile .ic{position:absolute;top:24px;right:24px;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:rgba(255,90,0,.14);color:var(--accent-2)}
+.tile .ic svg{width:22px;height:22px}
+.t1{grid-column:span 4;grid-row:span 2;min-height:520px}
+.t2{grid-column:span 2;grid-row:span 2}
+.t3,.t4,.t5{grid-column:span 2}
+@media (max-width:980px){.bento{grid-template-columns:1fr 1fr}.t1{grid-column:span 2;min-height:420px}.t2{grid-column:span 2;min-height:360px}.t3,.t4{grid-column:span 1}.t5{grid-column:span 2}}
+@media (max-width:600px){.bento{grid-template-columns:1fr}.t1,.t2,.t3,.t4,.t5{grid-column:span 1}}
+
+/* Galeria */
+.gallery{padding-block:clamp(80px,10vw,140px)}
+.strip{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;margin-top:40px;scrollbar-width:thin;scrollbar-color:var(--accent) transparent}
+.strip figure{margin:0;flex:0 0 clamp(260px,38vw,520px);scroll-snap-align:start;display:flex;flex-direction:column;gap:12px}
+.strip .media{aspect-ratio:4/3;border-radius:var(--r);max-width:100%}
+.strip figure:nth-child(even) .media{aspect-ratio:3/4}
+.strip figcaption{font-size:.86rem;color:var(--muted)}
+.hint{font-size:.8rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
 
 /* Clientes */
-.clients{padding-block:clamp(56px,8vw,104px)}
-.clients h2{font-size:clamp(1.8rem,3.6vw,2.8rem);margin-top:12px;max-width:20ch}
-.logos{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-top:40px}
-.logo-cell{background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:22px 14px;min-height:150px;text-align:center}
-.logo-cell .lg{width:96px;height:96px;border-radius:12px;background:#fff;display:grid;place-items:center;overflow:hidden}
-.logo-cell img{width:100%;height:100%;object-fit:contain}
-.logo-cell span{font-size:.8rem;color:var(--muted);line-height:1.3}
+.clients{padding-block:0 clamp(80px,10vw,140px)}
+.clients h2{font-size:clamp(2.4rem,5vw,4.2rem);margin-top:18px;max-width:16ch}
+.logos{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin-top:44px}
+.logo-cell{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.lg{width:100%;aspect-ratio:1;border-radius:16px;background:#fff;display:grid;place-items:center;overflow:hidden;filter:grayscale(1);opacity:.85;transition:filter .3s,opacity .3s,transform .3s}
+.logo-cell:hover .lg{filter:none;opacity:1;transform:translateY(-3px)}
+.lg img{width:100%;height:100%;object-fit:contain}
+.logo-cell span{font-size:.78rem;color:var(--muted);line-height:1.3}
 
 /* CTA */
-.cta{padding-block:0 clamp(56px,8vw,104px)}
-.cta-box{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;background:var(--accent);color:var(--on-accent);border-radius:calc(var(--r) * 1.6);padding:clamp(28px,5vw,56px)}
-.cta-box h2{font-size:clamp(1.8rem,4vw,3rem);max-width:18ch}
-.cta-box p{margin-top:12px;opacity:.9}
-.cta-box .btn{background:var(--deep);color:var(--deep-ink)}
-.cta-box .btn:hover{background:#000}
-@media (max-width:760px){.cta-box{grid-template-columns:1fr}}
+.cta{position:relative;isolation:isolate;padding-block:clamp(90px,12vw,170px);text-align:center;overflow:hidden}
+.cta .media{position:absolute;inset:0;z-index:-1}
+.cta .media::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(10,10,12,.72),rgba(10,10,12,.95) 75%)}
+.cta h2{font-size:clamp(2.8rem,7.4vw,6.4rem);max-width:14ch;margin-inline:auto}
+.cta p{color:rgba(245,243,239,.8);max-width:44ch;margin:22px auto 0;font-size:1.1rem}
+.cta .btn{margin-top:36px}
 
-/* Contato / rodapé */
-footer{background:var(--surface);padding-block:clamp(48px,7vw,80px) 28px}
-.f-grid{display:grid;grid-template-columns:1.2fr repeat(3,1fr);gap:32px}
-.f-grid h4{margin:0 0 12px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
-.f-grid p,.f-grid a{font-size:.98rem}
+/* Rodapé */
+footer{background:var(--bg-2);border-top:1px solid var(--line);padding-block:clamp(56px,7vw,88px) 28px}
+.f-grid{display:grid;grid-template-columns:1.3fr repeat(3,1fr);gap:36px}
+.f-grid h4{margin:0 0 14px;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-2);font-weight:700}
 .f-grid a{text-decoration:none}
-.f-grid a:hover{color:var(--accent)}
-.f-list{display:flex;flex-direction:column;gap:6px}
-.f-brand p{color:var(--muted);margin-top:10px;max-width:30ch}
-.social{display:flex;gap:10px;margin-top:16px}
-.social a{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 0 0 1.5px var(--line)}
+.f-grid a:hover{color:var(--accent-2)}
+.f-list{display:flex;flex-direction:column;gap:6px;color:rgba(245,243,239,.86)}
+.f-brand p{color:var(--muted);margin-top:14px;max-width:30ch}
+.social{display:flex;gap:10px;margin-top:20px}
+.social a{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line)}
+.social a:hover{border-color:var(--accent)}
 .social svg{width:18px;height:18px}
-.legal{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-@media (max-width:860px){.f-grid{grid-template-columns:1fr 1fr}}
+.legal{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:900px){.f-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:520px){.f-grid{grid-template-columns:1fr}}
 
-/* WhatsApp flutuante */
-.wa{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:30;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 28px rgba(0,0,0,.25);transition:transform .2s}
-.wa:hover{transform:scale(1.07)}
+.wa{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:50;width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.45);transition:transform .2s}
+.wa:hover{transform:scale(1.08)}
 .wa svg{width:30px;height:30px}
 
-@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
-.hero h1,.hero .lead,.hero .ctas{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
-.hero .lead{animation-delay:.08s}.hero .ctas{animation-delay:.16s}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
-<header>
+<header id="hd">
   <div class="wrap nav">
-    <a class="logo" href="#topo" aria-label="Sinapse Brasil, início">S<span class="bang">!</span>napse<small>Brasil</small></a>
+    <a class="logo" href="#topo" aria-label="Sinapse Brasil, início">S<i>!</i>napse</a>
     <nav class="links" aria-label="Principal">
       <a href="#quem-somos">Quem somos</a>
       <a href="#solucoes">Soluções</a>
+      <a href="#galeria">Galeria</a>
       <a href="#clientes">Clientes</a>
       <a href="#contato">Contato</a>
       <a class="btn" href="https://api.whatsapp.com/send?phone=5585999711108" target="_blank" rel="noopener">Fale com um consultor</a>
@@ -180,133 +203,153 @@ footer{background:var(--surface);padding-block:clamp(48px,7vw,80px) 28px}
 
 <main id="topo">
   <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <p class="eyebrow">Treinamentos · Palestras · Consultoria</p>
-        <h1 style="margin-top:18px">Desenvolvemos pessoas. <em>Transformamos</em> empresas.</h1>
-        <p class="lead">Transformamos pessoas, equipes e empresas através de experiências que geram mudança.</p>
-        <div class="ctas">
-          <a class="btn" href="https://api.whatsapp.com/send?phone=5585999711108" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg>
-            Solicite uma visita
-          </a>
-          <a class="btn ghost" href="#solucoes">Conheça as soluções</a>
-        </div>
-        <div class="since">
-          <div><b>2005</b><span>desde</span></div>
-          <div><b>5</b><span>frentes de atuação</span></div>
-          <div><b>CE</b><span>Fortaleza, Aldeota</span></div>
-        </div>
+    <div class="media"><img src="img/palestra-expoprag-2025.jpg" data-f="https://static.wixstatic.com/media/66acd7_ed91d81f99164c6cb399f5439f7516ba~mv2.jpg" alt="Palestra da Sinapse Brasil na Expoprag Norte Nordeste 2025" fetchpriority="high" onerror="fb(this)"></div>
+    <div class="wrap hero-in">
+      <span class="kicker">Treinamentos · Palestras · Consultoria</span>
+      <h1>Desenvolvemos pessoas. <span class="grad">Transformamos</span> empresas.</h1>
+      <p class="lead">Transformamos pessoas, equipes e empresas através de experiências que geram mudança.</p>
+      <div class="ctas">
+        <a class="btn" href="https://api.whatsapp.com/send?phone=5585999711108" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg> Solicite uma visita</a>
+        <a class="btn line" href="#solucoes">Conheça as soluções</a>
       </div>
-      <figure class="photo" style="margin:0">
-        <img src="img/palestra-expoprag-2025.jpg" data-f="https://static.wixstatic.com/media/66acd7_ed91d81f99164c6cb399f5439f7516ba~mv2.jpg" alt="Palestra da Sinapse Brasil na Expoprag Norte Nordeste 2025" width="1100" height="1375" fetchpriority="high" onerror="fb(this)">
-        <figcaption class="tag"><b>Expoprag Norte Nordeste 2025.</b> Experiências que provocam reflexão e movimentam pessoas.</figcaption>
-      </figure>
+      <div class="stats">
+        <div><b>2005</b><span>início da nossa história</span></div>
+        <div><b>21 anos</b><span>de experiência com empresas</span></div>
+        <div><b>5</b><span>formatos de solução</span></div>
+        <div><b>Fortaleza</b><span>atuação em todo o Brasil</span></div>
+      </div>
     </div>
   </section>
 
-  <svg class="synapse" viewBox="0 0 1200 56" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0 28 H420 C470 28 470 8 520 8 S570 48 620 48 S670 28 720 28 H1200" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".55"/>
-    <circle cx="520" cy="8" r="4" fill="currentColor"/><circle cx="620" cy="48" r="4" fill="currentColor"/><circle cx="720" cy="28" r="5" fill="currentColor"/>
-  </svg>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Atendimento</span><span>Experiência do cliente</span><span>Liderança</span><span>Cultura</span><span>Comportamento</span><span>Desenvolvimento de equipes</span>
+      <span>Atendimento</span><span>Experiência do cliente</span><span>Liderança</span><span>Cultura</span><span>Comportamento</span><span>Desenvolvimento de equipes</span>
+    </div>
+  </div>
+
+  <section class="manifesto">
+    <div class="wrap">
+      <p>Conhecimento, por si só, <strong>não transforma.</strong> A transformação acontece quando existe <strong class="grad"><em>consciência, disposição e movimento.</em></strong></p>
+    </div>
+  </section>
 
   <section class="about" id="quem-somos">
     <div class="wrap about-grid">
-      <div>
-        <p class="eyebrow">Quem somos nós</p>
-        <h2>Empresas são feitas de pessoas.</h2>
-        <figure class="photo" style="margin-block:32px 0">
-          <img src="img/treinamento-atendimento-magico.jpg" data-f="https://static.wixstatic.com/media/66acd7_e898ed5622e6428c8e54a44a9b4f06fd~mv2.jpg" alt="Treinamento Atendimento Mágico conduzido pela Sinapse Brasil" width="919" height="612" loading="lazy" onerror="fb(this)">
-        </figure>
+      <div class="about-photos">
+        <div class="media a"><img src="img/treinamento-atendimento-magico.jpg" data-f="https://static.wixstatic.com/media/66acd7_e898ed5622e6428c8e54a44a9b4f06fd~mv2.jpg" alt="Treinamento Atendimento Mágico conduzido pela Sinapse Brasil" loading="lazy" onerror="fb(this)"></div>
+        <div class="media b"><img src="img/sinapse-equipe.jpg" data-f="https://static.wixstatic.com/media/e9836b_f24c11556ca84919af24e04addc44f29~mv2.jpg" alt="Sinapse Brasil em Fortaleza" loading="lazy" onerror="fb(this)"></div>
+        <div class="badge"><b>Desde 2005</b>desenvolvendo pessoas</div>
       </div>
-      <div class="about-text">
-        <p>A Sinapse Brasil nasceu da crença de que nenhuma empresa cresce de verdade sem desenvolver as pessoas que fazem parte dela.</p>
-        <p>Nossa história começou em 2005 e, ao longo dos anos, acumulamos experiências, aprendizados e vivências ao lado de empresas dos mais diversos segmentos. Essa trajetória nos trouxe até aqui e nos fez evoluir.</p>
-        <p>Hoje, somos uma empresa de treinamentos, palestras e consultoria, dedicada a ajudar empresas que desejam desenvolver pessoas, fortalecer sua cultura e criar experiências que façam sentido para clientes e equipes.</p>
-        <p>Acreditamos que conhecimento, por si só, não transforma. A transformação acontece quando existe consciência, disposição e movimento para colocar em prática aquilo que precisa mudar. Por isso, não criamos apenas treinamentos.</p>
-        <p>Desenvolvemos experiências que provocam reflexões, geram novas percepções e ajudam pessoas e empresas a saírem do automático. Nosso trabalho passa por atendimento, experiência do cliente, liderança, cultura, comportamento e desenvolvimento de equipes, sempre com um objetivo claro: transformar aprendizado em ação.</p>
-        <p>Porque, no fim, empresas são feitas de pessoas. E quando as pessoas mudam a forma como pensam, agem e se relacionam, a empresa inteira começa a mudar junto.</p>
-        <div class="motto"><span>Desenvolvendo pessoas</span><span>Transformando experiências</span><span>Movimentando empresas</span></div>
+      <div>
+        <span class="kicker">Quem somos nós</span>
+        <h2>Empresas são feitas de <span class="grad">pessoas.</span></h2>
+        <div class="about-text">
+          <p>A Sinapse Brasil nasceu da crença de que nenhuma empresa cresce de verdade sem desenvolver as pessoas que fazem parte dela.</p>
+          <p>Nossa história começou em 2005 e, ao longo dos anos, acumulamos experiências, aprendizados e vivências ao lado de empresas dos mais diversos segmentos. Hoje, somos uma empresa de treinamentos, palestras e consultoria, dedicada a ajudar empresas que desejam desenvolver pessoas, fortalecer sua cultura e criar experiências que façam sentido para clientes e equipes.</p>
+          <p>Não criamos apenas treinamentos. Desenvolvemos experiências que provocam reflexões, geram novas percepções e ajudam pessoas e empresas a saírem do automático, sempre com um objetivo claro: transformar aprendizado em ação.</p>
+          <p>Quando as pessoas mudam a forma como pensam, agem e se relacionam, a empresa inteira começa a mudar junto.</p>
+        </div>
+        <div class="pillars"><span>Desenvolvendo pessoas</span><span>Transformando experiências</span><span>Movimentando empresas</span></div>
       </div>
     </div>
   </section>
 
   <section class="solutions" id="solucoes">
     <div class="wrap">
-      <div class="sol-head">
+      <div class="sec-head">
         <div>
-          <p class="eyebrow">Soluções</p>
-          <h2>Mais para você e sua empresa.</h2>
+          <span class="kicker">Soluções</span>
+          <h2>Mais para você e sua <span class="grad">empresa.</span></h2>
         </div>
         <p>Cada formato parte do mesmo princípio: aprendizado só vale quando vira prática dentro da empresa.</p>
       </div>
-      <div class="sol-list">
-        <a class="sol" href="https://api.whatsapp.com/send?phone=5585999711108&text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20palestras." target="_blank" rel="noopener">
+      <div class="bento">
+        <a class="tile t1" href="https://api.whatsapp.com/send?phone=5585999711108&amp;text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20palestras." target="_blank" rel="noopener">
+          <div class="media"><img src="img/palestra-expoprag-2025.jpg" data-f="https://static.wixstatic.com/media/66acd7_ed91d81f99164c6cb399f5439f7516ba~mv2.jpg" alt="" loading="lazy" onerror="fb(this)"></div>
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span>
           <h3>Palestras</h3>
           <p>Experiências que provocam reflexão, despertam novas perspectivas e movimentam pessoas.</p>
-          <span class="more">Saiba mais →</span>
+          <span class="go">Quero uma palestra →</span>
         </a>
-        <a class="sol" href="https://api.whatsapp.com/send?phone=5585999711108&text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20treinamentos." target="_blank" rel="noopener">
+        <a class="tile t2" href="https://api.whatsapp.com/send?phone=5585999711108&amp;text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20treinamentos." target="_blank" rel="noopener">
+          <div class="media"><img src="img/treinamento-atendimento-magico.jpg" data-f="https://static.wixstatic.com/media/66acd7_e898ed5622e6428c8e54a44a9b4f06fd~mv2.jpg" alt="" loading="lazy" onerror="fb(this)"></div>
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l9-4 9 4-9 4-9-4Z"/><path d="M7 10v5c3 2 7 2 10 0v-5"/></svg></span>
           <h3>Treinamentos</h3>
           <p>Programas práticos para desenvolver atendimento, liderança, cultura, experiência do cliente e comportamento.</p>
-          <span class="more">Saiba mais →</span>
+          <span class="go">Quero um treinamento →</span>
         </a>
-        <a class="sol" href="https://api.whatsapp.com/send?phone=5585999711108&text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20consultoria." target="_blank" rel="noopener">
+        <a class="tile t3" href="https://api.whatsapp.com/send?phone=5585999711108&amp;text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20consultoria." target="_blank" rel="noopener">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></span>
           <h3>Consultoria</h3>
-          <p>Diagnóstico, direcionamento e acompanhamento para empresas que querem melhorar processos, pessoas e resultados.</p>
-          <span class="more">Saiba mais →</span>
+          <p>Diagnóstico, direcionamento e acompanhamento para melhorar processos, pessoas e resultados.</p>
+          <span class="go">Saiba mais →</span>
         </a>
-        <a class="sol" href="https://api.whatsapp.com/send?phone=5585999711108&text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20experi%C3%AAncias%20e%20imers%C3%B5es." target="_blank" rel="noopener">
+        <a class="tile t4" href="https://api.whatsapp.com/send?phone=5585999711108&amp;text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20experi%C3%AAncias%20e%20imers%C3%B5es." target="_blank" rel="noopener">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.3 11l7.4-3.8M8.3 13l7.4 3.8"/></svg></span>
-          <h3>Experiências e imersões</h3>
+          <h3>Imersões</h3>
           <p>Encontros desenvolvidos para gerar aprendizado profundo e aplicação prática dentro das empresas.</p>
-          <span class="more">Saiba mais →</span>
+          <span class="go">Saiba mais →</span>
         </a>
-        <a class="sol" href="https://api.whatsapp.com/send?phone=5585999711108&text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20pesquisas." target="_blank" rel="noopener">
+        <a class="tile t5" href="https://api.whatsapp.com/send?phone=5585999711108&amp;text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20pesquisas." target="_blank" rel="noopener">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
           <h3>Pesquisas</h3>
-          <p>Pesquisas que ajudam a tomar decisões mais assertivas sobre as diversas questões que envolvem a sua empresa.</p>
-          <span class="more">Saiba mais →</span>
+          <p>Pesquisas que ajudam a tomar decisões mais assertivas sobre as questões que envolvem a sua empresa.</p>
+          <span class="go">Saiba mais →</span>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="galeria">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:0">
+        <div>
+          <span class="kicker">Galeria</span>
+          <h2>Experiências que <span class="grad">movimentam.</span></h2>
+        </div>
+        <p class="hint">Arraste para ver mais →</p>
+      </div>
+      <div class="strip">
+        <figure><div class="media"><img src="img/palestra-expoprag-2025.jpg" data-f="https://static.wixstatic.com/media/66acd7_ed91d81f99164c6cb399f5439f7516ba~mv2.jpg" alt="Palestra na Expoprag Norte Nordeste 2025" loading="lazy" onerror="fb(this)"></div><figcaption>Expoprag Norte Nordeste 2025</figcaption></figure>
+        <figure><div class="media"><img src="img/treinamento-atendimento-magico.jpg" data-f="https://static.wixstatic.com/media/66acd7_e898ed5622e6428c8e54a44a9b4f06fd~mv2.jpg" alt="Treinamento Atendimento Mágico" loading="lazy" onerror="fb(this)"></div><figcaption>Treinamento Atendimento Mágico</figcaption></figure>
+        <figure><div class="media"><img src="img/sinapse-equipe.jpg" data-f="https://static.wixstatic.com/media/e9836b_f24c11556ca84919af24e04addc44f29~mv2.jpg" alt="Sinapse Brasil" loading="lazy" onerror="fb(this)"></div><figcaption>Sinapse Brasil</figcaption></figure>
+        <figure><div class="media"><img src="img/sinapse-escritorio.jpg" data-f="https://static.wixstatic.com/media/e9836b_6f6e707454474402a1aa3cba4ede4612~mv2.jpg" alt="Sinapse Brasil em Fortaleza" loading="lazy" onerror="fb(this)"></div><figcaption>Fortaleza, Ceará</figcaption></figure>
+        <figure><div class="media"><img src="img/sinapse-palco.jpg" data-f="https://static.wixstatic.com/media/e9836b_7ab9375749c04a9497ee6bba35721551~mv2.jpg" alt="Sinapse Brasil em ação" loading="lazy" onerror="fb(this)"></div><figcaption>Sinapse em ação</figcaption></figure>
       </div>
     </div>
   </section>
 
   <section class="clients" id="clientes">
     <div class="wrap">
-      <p class="eyebrow">Clientes</p>
-      <h2>Empresas que já viveram essa experiência.</h2>
+      <span class="kicker">Clientes</span>
+      <h2>Empresas que já viveram essa <span class="grad">experiência.</span></h2>
       <div class="logos">
-        <div class="logo-cell"><div class="lg"><img src="img/clientes/lucas-cunha.png" data-f="https://static.wixstatic.com/media/e9836b_04aaadf2736945f28712e2c5bddd1573~mv2.png" alt="Lucas Cunha" width="96" height="96" loading="lazy" onerror="fb(this)"></div><span>Lucas Cunha</span></div>
-        <div class="logo-cell"><div class="lg"><img src="img/clientes/flavio-morais.png" data-f="https://static.wixstatic.com/media/e9836b_3274fd6d9e8a42b3a869e8f9546607fd~mv2.png" alt="Flávio Morais" width="96" height="96" loading="lazy" onerror="fb(this)"></div><span>Flávio Morais</span></div>
-        <div class="logo-cell"><div class="lg"><img src="img/clientes/clinica-dra-limeira.png" data-f="https://static.wixstatic.com/media/e9836b_a5e590733a3c4a099653b09a0865f387~mv2.png" alt="Clínica Dra. Limeira" width="96" height="96" loading="lazy" onerror="fb(this)"></div><span>Clínica Dra. Limeira</span></div>
-        <div class="logo-cell"><div class="lg"><img src="img/clientes/trusted-consultants.png" data-f="https://static.wixstatic.com/media/e9836b_1e0b43616c6649e597cf168dee8c1817~mv2.png" alt="Trusted Consultants EUA" width="96" height="96" loading="lazy" onerror="fb(this)"></div><span>Trusted Consultants EUA</span></div>
-        <div class="logo-cell"><div class="lg"><img src="img/clientes/intermedium.png" data-f="https://static.wixstatic.com/media/e9836b_0bd658120d614cb6bf493398f3d59ec6~mv2.png" alt="Intermedium Terceirização" width="96" height="96" loading="lazy" onerror="fb(this)"></div><span>Intermedium Terceirização</span></div>
-        <div class="logo-cell"><div class="lg"><img src="img/clientes/pinheiro-supermercado.png" data-f="https://static.wixstatic.com/media/e9836b_796e09c76a484dbfb8a14413ef17b9db~mv2.png" alt="Pinheiro Supermercado" width="96" height="96" loading="lazy" onerror="fb(this)"></div><span>Pinheiro Supermercado</span></div>
-        <div class="logo-cell"><div class="lg"><img src="img/clientes/futcenter.png" data-f="https://static.wixstatic.com/media/e9836b_d359e868ca9a4a9394589f4891199370~mv2.png" alt="FutCenter" width="96" height="96" loading="lazy" onerror="fb(this)"></div><span>FutCenter</span></div>
-        <div class="logo-cell"><div class="lg"><img src="img/clientes/km-engenharia.png" data-f="https://static.wixstatic.com/media/e9836b_8bc2d21b6e014112adf316968649fd53~mv2.png" alt="KM Engenharia" width="96" height="96" loading="lazy" onerror="fb(this)"></div><span>KM Engenharia</span></div>
-        <div class="logo-cell"><div class="lg"><img src="img/clientes/aquaville-resort.png" data-f="https://static.wixstatic.com/media/e9836b_40499b23fb2948ea964907fd52e27050~mv2.png" alt="Aquaville Resort" width="96" height="96" loading="lazy" onerror="fb(this)"></div><span>Aquaville Resort</span></div>
-        <div class="logo-cell"><div class="lg"><img src="img/clientes/ers-telecom.png" data-f="https://static.wixstatic.com/media/e9836b_71becadf18d84947958b6332f2353bbd~mv2.png" alt="ERS Telecom" width="96" height="96" loading="lazy" onerror="fb(this)"></div><span>ERS Telecom</span></div>
-        <div class="logo-cell"><div class="lg"><img src="img/clientes/ciof.png" data-f="https://static.wixstatic.com/media/e9836b_e1e90d1c160b4627abfc3c2aaad3e2dd~mv2.png" alt="CIOF" width="96" height="96" loading="lazy" onerror="fb(this)"></div><span>CIOF</span></div>
-        <div class="logo-cell"><div class="lg"><img src="img/clientes/artesanal-restaurante.png" data-f="https://static.wixstatic.com/media/e9836b_a8058dcf9562432ebf1f2b02c762fdc3~mv2.png" alt="Artesanal Restaurante" width="96" height="96" loading="lazy" onerror="fb(this)"></div><span>Artesanal Restaurante</span></div>
-        <div class="logo-cell"><div class="lg"><img src="img/clientes/beckman-sementes.png" data-f="https://static.wixstatic.com/media/e9836b_480f19e2900b4414be79878c4c46c183~mv2.png" alt="Beckman Sementes" width="96" height="96" loading="lazy" onerror="fb(this)"></div><span>Beckman Sementes</span></div>
-        <div class="logo-cell"><div class="lg"><img src="img/clientes/cliente-sinapse.png" data-f="https://static.wixstatic.com/media/e9836b_8a7f66865e254f0ba3060309be4afd3b~mv2.png" alt="Cliente Sinapse" width="96" height="96" loading="lazy" onerror="fb(this)"></div><span>Cliente Sinapse</span></div>
+        <div class="logo-cell"><div class="lg"><img src="img/clientes/lucas-cunha.png" data-f="https://static.wixstatic.com/media/e9836b_04aaadf2736945f28712e2c5bddd1573~mv2.png" alt="Lucas Cunha" loading="lazy" onerror="fb(this)"></div><span>Lucas Cunha</span></div>
+        <div class="logo-cell"><div class="lg"><img src="img/clientes/flavio-morais.png" data-f="https://static.wixstatic.com/media/e9836b_3274fd6d9e8a42b3a869e8f9546607fd~mv2.png" alt="Flávio Morais" loading="lazy" onerror="fb(this)"></div><span>Flávio Morais</span></div>
+        <div class="logo-cell"><div class="lg"><img src="img/clientes/clinica-dra-limeira.png" data-f="https://static.wixstatic.com/media/e9836b_a5e590733a3c4a099653b09a0865f387~mv2.png" alt="Clínica Dra. Limeira" loading="lazy" onerror="fb(this)"></div><span>Clínica Dra. Limeira</span></div>
+        <div class="logo-cell"><div class="lg"><img src="img/clientes/trusted-consultants.png" data-f="https://static.wixstatic.com/media/e9836b_1e0b43616c6649e597cf168dee8c1817~mv2.png" alt="Trusted Consultants EUA" loading="lazy" onerror="fb(this)"></div><span>Trusted Consultants EUA</span></div>
+        <div class="logo-cell"><div class="lg"><img src="img/clientes/intermedium.png" data-f="https://static.wixstatic.com/media/e9836b_0bd658120d614cb6bf493398f3d59ec6~mv2.png" alt="Intermedium Terceirização" loading="lazy" onerror="fb(this)"></div><span>Intermedium Terceirização</span></div>
+        <div class="logo-cell"><div class="lg"><img src="img/clientes/pinheiro-supermercado.png" data-f="https://static.wixstatic.com/media/e9836b_796e09c76a484dbfb8a14413ef17b9db~mv2.png" alt="Pinheiro Supermercado" loading="lazy" onerror="fb(this)"></div><span>Pinheiro Supermercado</span></div>
+        <div class="logo-cell"><div class="lg"><img src="img/clientes/futcenter.png" data-f="https://static.wixstatic.com/media/e9836b_d359e868ca9a4a9394589f4891199370~mv2.png" alt="FutCenter" loading="lazy" onerror="fb(this)"></div><span>FutCenter</span></div>
+        <div class="logo-cell"><div class="lg"><img src="img/clientes/km-engenharia.png" data-f="https://static.wixstatic.com/media/e9836b_8bc2d21b6e014112adf316968649fd53~mv2.png" alt="KM Engenharia" loading="lazy" onerror="fb(this)"></div><span>KM Engenharia</span></div>
+        <div class="logo-cell"><div class="lg"><img src="img/clientes/aquaville-resort.png" data-f="https://static.wixstatic.com/media/e9836b_40499b23fb2948ea964907fd52e27050~mv2.png" alt="Aquaville Resort" loading="lazy" onerror="fb(this)"></div><span>Aquaville Resort</span></div>
+        <div class="logo-cell"><div class="lg"><img src="img/clientes/ers-telecom.png" data-f="https://static.wixstatic.com/media/e9836b_71becadf18d84947958b6332f2353bbd~mv2.png" alt="ERS Telecom" loading="lazy" onerror="fb(this)"></div><span>ERS Telecom</span></div>
+        <div class="logo-cell"><div class="lg"><img src="img/clientes/ciof.png" data-f="https://static.wixstatic.com/media/e9836b_e1e90d1c160b4627abfc3c2aaad3e2dd~mv2.png" alt="CIOF" loading="lazy" onerror="fb(this)"></div><span>CIOF</span></div>
+        <div class="logo-cell"><div class="lg"><img src="img/clientes/artesanal-restaurante.png" data-f="https://static.wixstatic.com/media/e9836b_a8058dcf9562432ebf1f2b02c762fdc3~mv2.png" alt="Artesanal Restaurante" loading="lazy" onerror="fb(this)"></div><span>Artesanal Restaurante</span></div>
+        <div class="logo-cell"><div class="lg"><img src="img/clientes/beckman-sementes.png" data-f="https://static.wixstatic.com/media/e9836b_480f19e2900b4414be79878c4c46c183~mv2.png" alt="Beckman Sementes" loading="lazy" onerror="fb(this)"></div><span>Beckman Sementes</span></div>
+        <div class="logo-cell"><div class="lg"><img src="img/clientes/cliente-sinapse.png" data-f="https://static.wixstatic.com/media/e9836b_8a7f66865e254f0ba3060309be4afd3b~mv2.png" alt="Cliente Sinapse" loading="lazy" onerror="fb(this)"></div><span>Cliente Sinapse</span></div>
       </div>
     </div>
   </section>
 
   <section class="cta">
+    <div class="media"><img src="img/treinamento-atendimento-magico.jpg" data-f="https://static.wixstatic.com/media/66acd7_e898ed5622e6428c8e54a44a9b4f06fd~mv2.jpg" alt="" loading="lazy" onerror="fb(this)"></div>
     <div class="wrap">
-      <div class="cta-box">
-        <div>
-          <h2>Sua empresa está pronta para uma nova experiência?</h2>
-          <p>Vamos conversar. Um consultor vai até você entender o momento da sua equipe.</p>
-        </div>
-        <a class="btn" href="https://api.whatsapp.com/send?phone=5585999711108" target="_blank" rel="noopener">Solicite uma visita →</a>
-      </div>
+      <span class="kicker">Vamos conversar?</span>
+      <h2 style="margin-top:20px">Sua empresa está pronta para uma <span class="grad">nova experiência?</span></h2>
+      <p>Um consultor vai até você para entender o momento da sua equipe e indicar o formato certo.</p>
+      <a class="btn" href="https://api.whatsapp.com/send?phone=5585999711108" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg> Solicite uma visita</a>
     </div>
   </section>
 </main>
@@ -315,7 +358,7 @@ footer{background:var(--surface);padding-block:clamp(48px,7vw,80px) 28px}
   <div class="wrap">
     <div class="f-grid">
       <div class="f-brand">
-        <span class="logo">S<span class="bang">!</span>napse</span>
+        <span class="logo">S<i>!</i>napse</span>
         <p>Desenvolvendo pessoas. Transformando experiências. Movimentando empresas.</p>
         <div class="social">
           <a href="https://instagram.com/sinapseonline" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
@@ -331,11 +374,11 @@ footer{background:var(--surface);padding-block:clamp(48px,7vw,80px) 28px}
       </div>
       <div>
         <h4>E-mail</h4>
-        <span>comercial@sinapseonline.com</span>
+        <div class="f-list"><span>comercial@sinapseonline.com</span></div>
       </div>
       <div>
         <h4>Endereço</h4>
-        <a href="https://www.google.com/maps/place/SINAPSE+-+Consultoria+em+Marketing+e+Publicidade/@-3.7382541,-38.4971056,15z" target="_blank" rel="noopener">Rua Leonardo Mota, 1394, Loja 06<br>Aldeota, Fortaleza - CE<br>60170-041</a>
+        <div class="f-list"><a href="https://www.google.com/maps/place/SINAPSE+-+Consultoria+em+Marketing+e+Publicidade/@-3.7382541,-38.4971056,15z" target="_blank" rel="noopener">Rua Leonardo Mota, 1394, Loja 06<br>Aldeota, Fortaleza - CE<br>60170-041</a></div>
       </div>
     </div>
     <div class="legal">
@@ -345,8 +388,10 @@ footer{background:var(--surface);padding-block:clamp(48px,7vw,80px) 28px}
   </div>
 </footer>
 
-<a class="wa" href="https://api.whatsapp.com/send?phone=5585999711108" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg>
-</a>
+<a class="wa" href="https://api.whatsapp.com/send?phone=5585999711108" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg></a>
+
+<script>
+(function(){var h=document.getElementById("hd");function s(){h.classList.toggle("solid",window.scrollY>40)}s();window.addEventListener("scroll",s,{passive:true})})();
+</script>
 </body>
 </html>
