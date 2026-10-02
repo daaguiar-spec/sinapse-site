@@ -148,21 +148,21 @@ header.solid{background:rgba(10,10,12,.82);backdrop-filter:blur(14px);border-bot
 /* Livros */
 .books{padding-block:clamp(80px,10vw,140px);background:var(--bg-2);border-top:1px solid var(--line)}
 .books-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(36px,6vw,88px);align-items:center}
-.covers{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,3vw,32px);align-items:start}
-.book{display:flex;flex-direction:column;gap:10px;min-width:0}
-.cover{display:block;border-radius:6px;overflow:hidden;box-shadow:0 24px 50px rgba(0,0,0,.55);transition:transform .35s}
+.covers{display:flex;flex-wrap:wrap;gap:clamp(24px,3vw,40px);align-items:flex-start;justify-content:center}
+.book{display:flex;flex-direction:column;gap:8px;width:min-content;max-width:100%}
+.cover{display:block;width:max-content;max-width:100%;border-radius:6px;overflow:hidden;box-shadow:0 20px 44px rgba(0,0,0,.55);transition:transform .35s}
 .cover:hover{transform:translateY(-6px) rotate(-1deg)}
-.cover img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover}
+.cover img{display:block;height:clamp(260px,24vw,330px);width:auto;max-width:100%;object-fit:contain}
 .book .fmt{margin-top:10px;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-2)}
-.book h3{font-size:clamp(1.6rem,2.6vw,2.1rem)}
-.book p{color:var(--muted);font-size:.95rem}
+.book h3{font-size:clamp(1.4rem,2vw,1.7rem)}
+.book p{color:var(--muted);font-size:.9rem;line-height:1.5}
 .buy{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:6px;padding-top:14px;border-top:1px solid var(--line)}
 .buy b{font-family:var(--display);font-weight:400;font-size:1.7rem;font-variant-numeric:tabular-nums}
 .btn.sm{padding:12px 20px;font-size:.78rem}
 .books-text h2{font-size:clamp(2.8rem,6vw,5rem);margin-top:18px}
 .books-text p{color:var(--muted);font-size:1.1rem;margin-block:22px 30px;max-width:42ch}
 @media (max-width:900px){.books-grid{grid-template-columns:1fr}.books-text{order:-1}}
-@media (max-width:480px){.covers{grid-template-columns:1fr;max-width:340px;margin-inline:auto}}
+
 
 /* Clientes em fundo branco */
 .clients{background:#FFFFFF;color:#14141A;padding-block:clamp(80px,10vw,130px);text-align:center}
