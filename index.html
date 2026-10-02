@@ -81,6 +81,8 @@ header.solid{background:rgba(10,10,12,.82);backdrop-filter:blur(14px);border-bot
 @keyframes zoom{from{transform:scale(1.12)}to{transform:scale(1)}}
 .hero-in{padding-block:150px 56px;width:100%}
 .hero h1 .ln{display:block}
+.kicker.hk{align-items:flex-start;line-height:1.7}
+.kicker.hk::before{margin-top:.8em;flex:none}
 .hero h1{font-size:clamp(2.3rem,12.4vw,8.6rem);max-width:14ch;margin-top:22px;overflow-wrap:normal;hyphens:none}
 .hero .lead{font-size:clamp(1.05rem,1.7vw,1.3rem);color:rgba(245,243,239,.82);max-width:38ch;margin-top:26px}
 .hero .ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
@@ -242,7 +244,10 @@ footer{background:var(--bg-2);border-top:1px solid var(--line);padding-block:cla
 }
 @media (max-width:760px){
   .hero .media img{object-position:62% 35%}
-  .hero .media::after{background:linear-gradient(180deg,rgba(10,10,12,.6) 0%,rgba(10,10,12,.62) 45%,rgba(10,10,12,.82) 80%,var(--bg) 100%)}
+  .hero .media::after{background:linear-gradient(180deg,rgba(10,10,12,.74) 0%,rgba(10,10,12,.72) 45%,rgba(10,10,12,.88) 80%,var(--bg) 100%)}
+  .hero{min-height:auto}
+  .hero-in{padding-block:118px 44px}
+  .hero h1{margin-top:16px}
 }
 @media (prefers-reduced-motion:reduce){.js .rv{opacity:1!important;transform:none!important}html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
@@ -267,7 +272,7 @@ footer{background:var(--bg-2);border-top:1px solid var(--line);padding-block:cla
   <section class="hero">
     <div class="media"><img src="img/abertura-atendimento-magico-grupo-sh.jpg" alt="Turma do treinamento Atendimento Mágico da Sinapse Brasil no Grupo SH" fetchpriority="high"></div>
     <div class="wrap hero-in">
-      <span class="kicker">Treinamentos · Palestras · Consultoria</span>
+      <span class="kicker hk"><span>Treinamentos • Palestras<br>• Consultoria</span></span>
       <h1><span class="ln">Desenvolvemos</span> <span class="ln">pessoas.</span> <span class="ln grad">Transformamos</span> <span class="ln">empresas.</span></h1>
       <p class="lead">Transformamos pessoas, equipes e empresas através de experiências que geram mudança.</p>
       <div class="ctas">
