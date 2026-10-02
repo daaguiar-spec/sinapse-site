@@ -21,6 +21,7 @@
 <link rel="preload" as="image" href="img/abertura-atendimento-magico-grupo-sh.jpg">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Sinapse Brasil", "legalName": "SINAPSE - CONSULTORIA EMPRESARIAL LTDA", "url": "https://www.sinapseonline.com/", "logo": "https://www.sinapseonline.com/favicon.svg", "image": "https://www.sinapseonline.com/img/abertura-atendimento-magico-grupo-sh.jpg", "description": "Treinamentos, palestras e consultoria para desenvolver pessoas e transformar empresas.", "telephone": "+55-85-99971-1108", "email": "comercial@sinapseonline.com", "foundingDate": "2005", "taxID": "11.277.870/0001-29", "address": {"@type": "PostalAddress", "streetAddress": "Rua Leonardo Mota, 1394, Loja 06", "addressLocality": "Fortaleza", "addressRegion": "CE", "postalCode": "60170-041", "addressCountry": "BR"}, "geo": {"@type": "GeoCoordinates", "latitude": -3.7382541, "longitude": -38.4971056}, "areaServed": "BR", "sameAs": ["https://instagram.com/sinapseonline", "https://www.facebook.com/sinapseonline"], "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Palestras"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Treinamentos"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Consultoria"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Experiências e imersões"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pesquisas"}}]}</script>
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Book", "name": "Checklist Cliente Feliz", "author": {"@type": "Person", "name": "Daniel Donato"}, "bookFormat": "https://schema.org/EBook", "image": "https://www.sinapseonline.com/img/livros/checklist-cliente-feliz.jpg", "offers": {"@type": "Offer", "price": "47.00", "priceCurrency": "BRL", "url": "https://pay.kiwify.com.br/XVbQm0V"}}, {"@context": "https://schema.org", "@type": "Book", "name": "O Poder do Movimento", "author": {"@type": "Person", "name": "Daniel Donato"}, "bookFormat": "https://schema.org/EBook", "image": "https://www.sinapseonline.com/img/livros/o-poder-do-movimento.jpg", "offers": {"@type": "Offer", "price": "19.90", "priceCurrency": "BRL", "url": "https://pay.kiwify.com.br/Vv79nk8"}}]</script>
+<script>document.documentElement.classList.add("js")</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:wght@400;500;600;700&display=swap">
@@ -143,16 +144,37 @@ header.solid{background:rgba(10,10,12,.82);backdrop-filter:blur(14px);border-bot
 .gallery{padding-block:clamp(80px,10vw,140px)}
 .reel{margin-top:44px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
 .reel-track{display:flex;width:max-content;animation:reel 90s linear infinite;will-change:transform;-webkit-backface-visibility:hidden;backface-visibility:hidden}
-.reel:hover .reel-track{animation-play-state:paused}
 .reel-set{display:flex;gap:16px;padding-right:16px}
 .reel img{height:clamp(220px,30vw,340px);width:auto;max-width:none;border-radius:var(--r);display:block;object-fit:cover}
 @keyframes reel{to{transform:translateX(-50%)}}
+
+/* Movimentos leves */
+.js .rv{opacity:0;transform:translateY(32px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.from-left{transform:translateX(-40px)}
+.js .rv.zoom{transform:scale(.94)}
+.js .rv.in{opacity:1;transform:none}
+.hero .kicker,.hero h1,.hero .lead,.hero .ctas,.hero .stats{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero h1{animation-delay:.1s}.hero .lead{animation-delay:.22s}.hero .ctas{animation-delay:.34s}.hero .stats{animation-delay:.46s}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.badge{animation:float 5s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
+.cta .media img{animation:drift 26s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1)}to{transform:scale(1.1) translateX(-2%)}}
+.wa::before{content:"";position:absolute;inset:0;border-radius:50%;background:#25D366;z-index:-1;animation:pulse 2.6s ease-out infinite}
+.wa{isolation:isolate}
+@keyframes pulse{from{transform:scale(1);opacity:.55}to{transform:scale(1.6);opacity:0}}
+.grad{background-size:200% 100%;animation:sheen 7s ease-in-out infinite alternate}
+@keyframes sheen{to{background-position:100% 0}}
+.btn{background-size:160% 100%;background-position:0 0;transition:transform .2s,box-shadow .2s,background-position .5s}
+.btn:hover{background-position:100% 0}
+.btn.line{background:transparent}
+
 @media (prefers-reduced-motion:reduce){.reel{overflow-x:auto}.reel-set[aria-hidden]{display:none}}
 
 /* Livros */
 .books{padding-block:clamp(80px,10vw,140px);background:var(--bg-2);border-top:1px solid var(--line)}
 .books-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(36px,6vw,88px);align-items:center}
-.covers{display:flex;flex-wrap:wrap;gap:clamp(24px,3vw,40px);align-items:flex-start;justify-content:center}
+.covers{display:flex;flex-wrap:wrap;gap:clamp(24px,3vw,40px);align-items:flex-start;justify-content:flex-start}
 .book{display:flex;flex-direction:column;gap:8px;width:min-content;max-width:100%}
 .cover{display:block;width:max-content;max-width:100%;border-radius:6px;overflow:hidden;box-shadow:0 20px 44px rgba(0,0,0,.55);transition:transform .35s}
 .cover:hover{transform:translateY(-6px) rotate(-1deg)}
@@ -215,7 +237,7 @@ footer{background:var(--bg-2);border-top:1px solid var(--line);padding-block:cla
   .stats div{padding:16px}
   .nav .btn{padding:10px 14px;font-size:.7rem}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1!important;transform:none!important}html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
@@ -446,7 +468,6 @@ footer{background:var(--bg-2);border-top:1px solid var(--line);padding-block:cla
         <img src="img/clientes/grupo-transloc.png" alt="Grupo Transloc" loading="lazy">
         <img src="img/clientes/atitude-servicos.png" alt="Atitude Serviços" loading="lazy">
         <img src="img/clientes/nuths.png" alt="Nuths" loading="lazy">
-        <img src="img/clientes/ciof.png" alt="CIOF Odontologia" loading="lazy">
         <img src="img/clientes/maxima-saneamento.png" alt="Máxima Saneamento Ambiental" loading="lazy">
         <img src="img/clientes/jap-roteiros-exclusivos.png" alt="JAP Roteiros Exclusivos" loading="lazy">
         <img src="img/clientes/reforcar.png" alt="Reforçar Acompanhamento Escolar" loading="lazy">
@@ -503,7 +524,28 @@ footer{background:var(--bg-2);border-top:1px solid var(--line);padding-block:cla
 <a class="wa" href="https://api.whatsapp.com/send?phone=5585999711108" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg></a>
 
 <script>
-(function(){var h=document.getElementById("hd");function s(){h.classList.toggle("solid",window.scrollY>40)}s();window.addEventListener("scroll",s,{passive:true})})();
+(function(){
+  var h=document.getElementById("hd");function s(){h.classList.toggle("solid",window.scrollY>40)}s();window.addEventListener("scroll",s,{passive:true});
+  if(!("IntersectionObserver" in window)){document.documentElement.classList.remove("js");return}
+  var groups=[
+    [".manifesto p",""],[".about-photos","from-left"],[".about-grid > div:last-child > *",""],
+    [".sec-head > *",""],[".tile",""],[".book","zoom"],[".books-text > *",""],
+    [".clients h2, .clients .sub",""],[".logos img","zoom"],[".clients .center",""],
+    [".cta .wrap > *",""],[".f-grid > *",""],[".reel",""],[".ticker",""]
+  ];
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{rootMargin:"0px 0px -8% 0px",threshold:.08});
+  groups.forEach(function(g){
+    var els=document.querySelectorAll(g[0]);
+    els.forEach(function(el,i){
+      el.classList.add("rv");if(g[1])el.classList.add(g[1]);
+      var idx=Array.prototype.indexOf.call(el.parentNode.children,el);
+      el.style.transitionDelay=Math.min(idx,8)*70+"ms";
+      el.addEventListener("transitionend",function done(ev){if(ev.propertyName!=="opacity")return;el.classList.remove("rv","in",g[1]||"rv");el.style.transitionDelay="";el.removeEventListener("transitionend",done)});
+      io.observe(el);
+    });
+  });
+  setTimeout(function(){document.querySelectorAll(".rv:not(.in)").forEach(function(el){var r=el.getBoundingClientRect();if(r.top<innerHeight)el.classList.add("in")})},2500);
+})();
 </script>
 </body>
 </html>
