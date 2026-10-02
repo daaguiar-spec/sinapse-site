@@ -10,33 +10,23 @@
 | `favicon.svg` | Ícone da aba do navegador |
 | `img/` | Pasta para as fotos (veja o passo 1) |
 
-## 1. Fotos (recomendado, antes ou depois de publicar)
+## 1. Fotos
 
-O site já funciona sem esta etapa: enquanto a pasta `img/` estiver vazia, as fotos são carregadas do Wix.
-Para o site ficar independente do Wix (obrigatório se você cancelar o plano), abra cada link abaixo,
-salve a imagem e coloque na pasta com exatamente o nome indicado:
+Todas as fotos já estão dentro da pasta `img/`, então o site não depende mais do Wix.
+Para trocar uma foto, envie outra com o mesmo nome por cima da antiga:
 
-| Salvar como | Link da imagem original |
+| Arquivo | Onde aparece |
 |---|---|
-| `img/palestra-expoprag-2025.jpg` | https://static.wixstatic.com/media/66acd7_ed91d81f99164c6cb399f5439f7516ba~mv2.jpg |
-| `img/treinamento-atendimento-magico.jpg` | https://static.wixstatic.com/media/66acd7_e898ed5622e6428c8e54a44a9b4f06fd~mv2.jpg |
-| `img/sinapse-equipe.jpg` | https://static.wixstatic.com/media/e9836b_f24c11556ca84919af24e04addc44f29~mv2.jpg |
-| `img/sinapse-escritorio.jpg` | https://static.wixstatic.com/media/e9836b_6f6e707454474402a1aa3cba4ede4612~mv2.jpg |
-| `img/sinapse-palco.jpg` | https://static.wixstatic.com/media/e9836b_7ab9375749c04a9497ee6bba35721551~mv2.jpg |
-| `img/clientes/lucas-cunha.png` | https://static.wixstatic.com/media/e9836b_04aaadf2736945f28712e2c5bddd1573~mv2.png |
-| `img/clientes/flavio-morais.png` | https://static.wixstatic.com/media/e9836b_3274fd6d9e8a42b3a869e8f9546607fd~mv2.png |
-| `img/clientes/clinica-dra-limeira.png` | https://static.wixstatic.com/media/e9836b_a5e590733a3c4a099653b09a0865f387~mv2.png |
-| `img/clientes/trusted-consultants.png` | https://static.wixstatic.com/media/e9836b_1e0b43616c6649e597cf168dee8c1817~mv2.png |
-| `img/clientes/intermedium.png` | https://static.wixstatic.com/media/e9836b_0bd658120d614cb6bf493398f3d59ec6~mv2.png |
-| `img/clientes/pinheiro-supermercado.png` | https://static.wixstatic.com/media/e9836b_796e09c76a484dbfb8a14413ef17b9db~mv2.png |
-| `img/clientes/futcenter.png` | https://static.wixstatic.com/media/e9836b_d359e868ca9a4a9394589f4891199370~mv2.png |
-| `img/clientes/km-engenharia.png` | https://static.wixstatic.com/media/e9836b_8bc2d21b6e014112adf316968649fd53~mv2.png |
-| `img/clientes/aquaville-resort.png` | https://static.wixstatic.com/media/e9836b_40499b23fb2948ea964907fd52e27050~mv2.png |
-| `img/clientes/ers-telecom.png` | https://static.wixstatic.com/media/e9836b_71becadf18d84947958b6332f2353bbd~mv2.png |
-| `img/clientes/ciof.png` | https://static.wixstatic.com/media/e9836b_e1e90d1c160b4627abfc3c2aaad3e2dd~mv2.png |
-| `img/clientes/artesanal-restaurante.png` | https://static.wixstatic.com/media/e9836b_a8058dcf9562432ebf1f2b02c762fdc3~mv2.png |
-| `img/clientes/beckman-sementes.png` | https://static.wixstatic.com/media/e9836b_480f19e2900b4414be79878c4c46c183~mv2.png |
-| `img/clientes/cliente-sinapse.png` | https://static.wixstatic.com/media/e9836b_8a7f66865e254f0ba3060309be4afd3b~mv2.png |
+| `img/abertura-atendimento-magico-grupo-sh.jpg` | Fundo da abertura, em tela cheia |
+| `img/sobre-1.jpg` e `img/sobre-2.jpg` | Quem somos (foto grande e foto menor) |
+| `img/solucao-palestras.jpg` | Cartão Palestras |
+| `img/solucao-treinamentos.jpg` | Cartão Treinamentos |
+| `img/galeria/galeria-01.jpg` a `galeria-18.jpg` | Galeria automática |
+| `img/livros/*.jpg` | Capas dos livros |
+| `img/clientes/*.png` | Logos dos clientes |
+| `img/chamada-final.jpg` | Fundo da chamada final |
+
+Dica: fotos da galeria com cerca de 560 px de altura e até 150 KB deixam o site rápido.
 
 ## 2. Publicar na Vercel
 
