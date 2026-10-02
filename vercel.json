@@ -1,0 +1,72 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/quem-somos",
+      "destination": "/#quem-somos",
+      "permanent": true
+    },
+    {
+      "source": "/servicos",
+      "destination": "/#solucoes",
+      "permanent": true
+    },
+    {
+      "source": "/clientes",
+      "destination": "/#clientes",
+      "permanent": true
+    },
+    {
+      "source": "/contato",
+      "destination": "/#contato",
+      "permanent": true
+    },
+    {
+      "source": "/blog-sinapse",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-sinapse/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/post/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/pesquisas-de-satisfacao",
+      "destination": "/#solucoes",
+      "permanent": true
+    },
+    {
+      "source": "/identidade-visual",
+      "destination": "/#solucoes",
+      "permanent": true
+    },
+    {
+      "source": "/publicidade-marketing",
+      "destination": "/#solucoes",
+      "permanent": true
+    },
+    {
+      "source": "/criacao-sites",
+      "destination": "/#solucoes",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
